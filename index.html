@@ -1,96 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Looma Interviewer AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin: -20px -20px 40px -20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #2196F3;
+            margin: 20px 0;
+        }
+
+        .warning-box {
+            background: #ffe7e7;
+            padding: 15px;
+            border-left: 4px solid #f44336;
+            margin: 20px 0;
+        }
+
+        .success-box {
+            background: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
+            margin: 20px 0;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .summary {
+            background: #667eea;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .summary ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .summary li:before {
+            content: "✓ ";
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            margin-top: 50px;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p style="font-size: 1.2em; margin-top: 10px;">Looma Interviewer AI Chrome Extension</p>
+            <p class="last-updated">Last Updated: January 7, 2025</p>
+        </header>
+
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p>
+                Looma Interviewer AI ("we", "our", "the Extension") is a Chrome browser extension designed to help
+                recruiters and hiring managers conduct and analyze video interviews on Google Meet. This Privacy Policy
+                explains how we collect, use, and protect your data.
+            </p>
+        </section>
+
+        <section id="data-collection">
+            <h2>2. Data We Collect</h2>
+
+            <h3>2.1 Interview Content Data</h3>
+            <p>When you use the Extension to record an interview, we collect:</p>
+            <ul>
+                <li><strong>Audio recordings</strong> of all interview participants</li>
+                <li><strong>Video recordings</strong> of interview participants (if video is enabled)</li>
+                <li><strong>Live transcriptions</strong> of spoken dialogue during the meeting</li>
+                <li><strong>Meeting metadata:</strong> date, time, meeting ID, participant names</li>
+            </ul>
+
+            <h3>2.2 Technical Data</h3>
+            <ul>
+                <li><strong>User preferences:</strong> recording quality settings, language preferences</li>
+                <li><strong>Authentication tokens:</strong> to connect with your backend server</li>
+                <li><strong>Extension usage data:</strong> button clicks, feature usage (stored locally only)</li>
+            </ul>
+
+            <h3>2.3 Data We Do NOT Collect</h3>
+            <div class="success-box">
+                <ul>
+                    <li>We do NOT collect browsing history outside of Google Meet</li>
+                    <li>We do NOT collect data from other websites or Chrome tabs</li>
+                    <li>We do NOT use cookies or tracking pixels</li>
+                    <li>We do NOT sell or share your data with third parties for advertising</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="data-usage">
+            <h2>3. How We Use Your Data</h2>
+
+            <h3>3.1 Primary Purpose</h3>
+            <p>All collected data is used solely for:</p>
+            <ul>
+                <li><strong>Interview evaluation:</strong> Analyzing candidate responses and performance</li>
+                <li><strong>Transcript generation:</strong> Converting speech to text for review</li>
+                <li><strong>Recording storage:</strong> Saving interview sessions for later review</li>
+                <li><strong>AI analysis:</strong> Processing interviews for insights and candidate assessment</li>
+            </ul>
+
+            <h3>3.2 Data Processing Location</h3>
+            <div class="info-box">
+                <ul>
+                    <li>All interview recordings are sent <strong>directly to your configured backend server</strong></li>
+                    <li>The Extension does NOT store interview content (audio, video, transcripts) in browser storage</li>
+                    <li>Processing happens on <strong>your infrastructure</strong> - we do not host or access your data</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="data-storage">
+            <h2>4. Data Storage and Security</h2>
+
+            <h3>4.1 Storage Location</h3>
+            <ul>
+                <li><strong>Browser Storage:</strong> Only stores user preferences, authentication tokens, and meeting metadata</li>
+                <li><strong>Backend Server:</strong> All interview recordings and transcripts are stored on <strong>your self-hosted backend</strong></li>
+                <li><strong>No Cloud Storage:</strong> We do not maintain any cloud servers or databases that store your interview data</li>
+            </ul>
+
+            <h3>4.2 Data Retention</h3>
+            <ul>
+                <li>Data retention policies are controlled by <strong>your backend system</strong></li>
+                <li>You have full control over how long recordings are stored</li>
+                <li>You can delete recordings at any time through your backend interface</li>
+            </ul>
+
+            <h3>4.3 Security Measures</h3>
+            <ul>
+                <li>All data transmission uses <strong>HTTPS</strong> encryption</li>
+                <li>Authentication tokens are stored securely in Chrome's storage API</li>
+                <li>No sensitive data is logged to browser console in production builds</li>
+            </ul>
+        </section>
+
+        <section id="third-party">
+            <h2>5. Third-Party Services</h2>
+
+            <h3>5.1 Google Meet Integration</h3>
+            <ul>
+                <li>The Extension integrates with Google Meet to capture meeting content</li>
+                <li>We do NOT send any data to Google (except standard Meet functionality)</li>
+                <li>Google's own Privacy Policy applies to Google Meet usage</li>
+            </ul>
+
+            <h3>5.2 Your Backend Server</h3>
+            <ul>
+                <li>The Extension communicates exclusively with <strong>your configured backend server</strong></li>
+                <li>We do not control or access your backend infrastructure</li>
+                <li>Your backend's privacy policy applies to data stored there</li>
+            </ul>
+
+            <h3>5.3 No Third-Party Analytics</h3>
+            <div class="success-box">
+                <ul>
+                    <li>We do NOT use Google Analytics or similar tracking services</li>
+                    <li>We do NOT integrate with advertising networks</li>
+                    <li>We do NOT share data with third-party AI providers</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="user-rights">
+            <h2>6. User Rights and Controls</h2>
+
+            <h3>6.1 Consent Requirements</h3>
+            <div class="warning-box">
+                <ul>
+                    <li>You MUST obtain consent from all interview participants before recording</li>
+                    <li>Recording without consent may violate laws in your jurisdiction</li>
+                    <li>The Extension displays a recording indicator during active sessions</li>
+                </ul>
+            </div>
+
+            <h3>6.2 Data Access and Deletion</h3>
+            <ul>
+                <li><strong>Access:</strong> You can access all your data through your backend system</li>
+                <li><strong>Export:</strong> You can download recordings and transcripts at any time</li>
+                <li><strong>Deletion:</strong> You can delete data through your backend interface</li>
+                <li><strong>Uninstall:</strong> Removing the Extension deletes all local browser data</li>
+            </ul>
+
+            <h3>6.3 GDPR Compliance (EU Users)</h3>
+            <p>If you are in the European Union, you have additional rights:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> Request a copy of your data</li>
+                <li><strong>Right to Rectification:</strong> Correct inaccurate data</li>
+                <li><strong>Right to Erasure:</strong> Request deletion of your data</li>
+                <li><strong>Right to Data Portability:</strong> Receive your data in a portable format</li>
+                <li><strong>Right to Object:</strong> Object to certain data processing activities</li>
+            </ul>
+        </section>
+
+        <section id="permissions">
+            <h2>7. Permissions Explanation</h2>
+
+            <h3>7.1 Required Chrome Permissions</h3>
+            <ul>
+                <li><code>activeTab</code>: To interact with Google Meet pages</li>
+                <li><code>storage</code>: To save user preferences and authentication tokens</li>
+                <li><code>tabCapture</code>: To record meeting audio and video</li>
+                <li><code>desktopCapture</code>: Fallback method for screen sharing capture</li>
+                <li><code>meet.google.com</code>: To access Google Meet interface</li>
+            </ul>
+
+            <h3>7.2 Why We Need These Permissions</h3>
+            <p>
+                Each permission is strictly necessary for core functionality. See the "Permissions" section in the
+                Chrome Web Store listing for detailed explanations.
+            </p>
+        </section>
+
+        <section id="enterprise">
+            <h2>8. Data Protection for Organizations</h2>
+
+            <h3>8.1 Enterprise Usage</h3>
+            <ul>
+                <li>Organizations can self-host the backend for full data control</li>
+                <li>IT administrators can configure centralized backend URLs</li>
+                <li>All data remains within the organization's infrastructure</li>
+            </ul>
+
+            <h3>8.2 Compliance Certifications</h3>
+            <ul>
+                <li>The Extension architecture supports GDPR, CCPA, and SOC 2 compliance</li>
+                <li>Compliance responsibility lies with the organization operating the backend</li>
+                <li>We provide technical documentation for security audits</li>
+            </ul>
+        </section>
+
+        <section id="children">
+            <h2>9. Children's Privacy</h2>
+            <p>
+                The Extension is designed for business use (recruitment and hiring) and is not intended for children
+                under 13. We do not knowingly collect data from minors.
+            </p>
+        </section>
+
+        <section id="international">
+            <h2>10. International Data Transfers</h2>
+            <ul>
+                <li>Data is sent to <strong>your configured backend server</strong></li>
+                <li>If your backend is in a different country, standard data transfer rules apply</li>
+                <li>You are responsible for ensuring compliance with international data transfer regulations</li>
+            </ul>
+        </section>
+
+        <section id="changes">
+            <h2>11. Changes to This Privacy Policy</h2>
+            <ul>
+                <li>We may update this Privacy Policy periodically</li>
+                <li>Changes will be reflected in the "Last Updated" date</li>
+                <li>Major changes will be communicated through Extension update notes</li>
+                <li>Continued use after changes constitutes acceptance</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>12. Contact Information</h2>
+            <div class="contact-info">
+                <p><strong>For privacy-related questions or concerns:</strong></p>
+                <p><strong>Email:</strong> <a href="mailto:privacy@looma.ai">privacy@looma.ai</a></p>
+                <p><strong>Support:</strong> <a href="mailto:support@looma.ai">support@looma.ai</a></p>
+                <p><strong>Website:</strong> <a href="https://looma.ai">https://looma.ai</a></p>
+            </div>
+        </section>
+
+        <section id="legal-basis">
+            <h2>13. Legal Basis for Processing (GDPR)</h2>
+            <p>Under GDPR, our legal basis for processing is:</p>
+            <ul>
+                <li><strong>Consent:</strong> You explicitly consent by using the recording feature</li>
+                <li><strong>Legitimate Interest:</strong> Processing is necessary for recruitment and hiring activities</li>
+                <li><strong>Contractual Necessity:</strong> Required to provide the service you requested</li>
+            </ul>
+        </section>
+
+        <section id="responsibilities">
+            <h2>14. Your Responsibilities</h2>
+            <div class="highlight">
+                <p><strong>As a user of this Extension, you are responsible for:</strong></p>
+                <ul>
+                    <li>Obtaining proper consent from interview participants</li>
+                    <li>Complying with recording laws in your jurisdiction</li>
+                    <li>Securing your backend server and infrastructure</li>
+                    <li>Implementing appropriate data retention policies</li>
+                    <li>Notifying participants that recording is taking place</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="liability">
+            <h2>15. Limitation of Liability</h2>
+            <ul>
+                <li>We provide the Extension "as is" without warranties</li>
+                <li>We are not liable for misuse of recorded data</li>
+                <li>You are solely responsible for compliance with applicable laws</li>
+                <li>Data loss due to backend server issues is not our responsibility</li>
+            </ul>
+        </section>
+
+        <section id="summary">
+            <div class="summary">
+                <h2 style="color: white; border: none; margin-top: 0;">Summary</h2>
+                <ul>
+                    <li>We collect interview recordings, transcripts, and metadata</li>
+                    <li>Data is sent directly to YOUR backend server</li>
+                    <li>We do NOT store interview content in our systems</li>
+                    <li>We do NOT sell or share your data with third parties</li>
+                    <li>You maintain full control over your data</li>
+                    <li>GDPR and data protection compliant architecture</li>
+                    <li>Open-source and transparent codebase</li>
+                </ul>
+                <p style="margin-top: 20px; font-style: italic;">
+                    By using Looma Interviewer AI, you acknowledge that you have read and understood this Privacy Policy.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Looma AI. All rights reserved.</p>
+            <p>
+                <a href="https://looma.ai">Website</a> |
+                <a href="mailto:support@looma.ai">Contact Support</a> |
+                <a href="https://github.com/looma-ai">GitHub</a>
+            </p>
+        </footer>
+    </div>
+</body>
 </html>
